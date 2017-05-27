@@ -1,0 +1,123 @@
+body{
+
+}
+
+.youwantto {
+	width: 15% !important;
+	display: inline-block !important;
+}
+
+#header{
+	background: #CA7642;
+}
+.NameOfSite{
+	text-align: center;
+	padding: 5px 0 5px 0;
+	color: white;
+}
+
+div.ui-input-text { display: inline block !important }
+
+.DescOfSite{
+	text-align: center;
+	font-size: 16px;
+}
+
+h2{
+	background: #116062 !important;
+	color: white !important;
+	border-radius: 4px;
+	padding: 4px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+
+/* Прижимаем подвал к низу страницы */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
+
+.wrapper{
+	  background: white;
+	  margin: 10px 2%;
+	  border-radius: 20px;
+	  padding: 2px;
+
+}
+
+.ShortInfo, .Info{
+  background: white;
+  	margin: 10px 0;
+	border-radius: 10px;
+}
+p{
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.content {
+  padding-bottom: 90px;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.Scenario {
+	text-align: center;
+	margin: 15px 0;
+	padding: 2px;
+	background: linear-gradient(to bottom, #f9f9f9, #f6f6f6);
+  	margin: 10px 5px;
+	padding: 5px;
+		-webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #2E6DA3; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  width: 70%;
+  margin: auto;
+} 
+.knopka:hover { background: #88B6DD; cursor: pointer; } /* при наведении курсора мышки */
+.knopka:active { background: #88B6DD; } /* при нажатии */
+
+.ScInfo{
+	padding: 10px 0;
+}
+
+.youwill, .youshould{
+	color: #008989;
+}
+
+.YSwhat div{
+	padding: 5px 0;
+}
+
+.navi{
+	background: #116062 !important;
+	color: white !important;
+}

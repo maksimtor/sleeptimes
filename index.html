@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cleep Calculator</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<div data-role="page" id="mainPage">
+<div data-role="navbar">
+      <ul>
+        <li><a class="navi" href="#mainPage" data-icon="home">Калькулятор</a></li>
+        <li><a class="navi" href="#howItWorks" data-icon="info">Как считать</a></li>
+        <li><a class="navi" href="#contacts" data-icon="search">Контакты</a></li>
+      </ul>
+    </div>
+
+<div role="main" class="ui-content">
+
+<div class="Scenario">
+	<div class="Sc1">
+		<div class="ScName">Сценарий 1</div>
+		<div class="ScInfo">Во сколько вам следует лечь спать, чтобы проснуться в определенное время?</div>
+		<div class="ScIfYou"></div>
+		<div class="Values">
+			<div class="ScWhen"><div>Вы хотите проснуться в:</div> <input data-wrapper-class="youwantto" id="th" maxlength="2" size="1" value="">:<input data-wrapper-class="youwantto" id="tm" maxlength="2" size="1" value=""> </div>
+			<div class="TimeForFalling"><div>Вы засыпаете за: (в минутах)</div> <input data-wrapper-class="youwantto" id="tff" maxlength="2" size="1" value=""> </div>
+		</div>
+		<div class="knopka" id="knopka1">Рассчитать</div>
+		<div class="AllYS">
+		<div class="YouShould"></div>
+		<div class="YSwhat">
+			<div class="YSstage1"></div>
+			<div class="YSstage2"></div>
+			<div class="YSstage3"></div>
+			<div class="YSstage4"></div>
+			<div class="YSstage5"></div>
+			<div class="YSstage6"></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="Scenario">
+	<div class="Sc2">
+		<div class="ScName">Сценарий 2</div>
+		<div class="ScInfo">Во сколько вам следует проснуться, если вы ляжете в определенное время?</div>
+		<div class="ScIfYou"></div>
+		<div class="Values">
+			<div class="ScWhen"><div>Вы хотите лечь в:</div> <input data-wrapper-class="youwantto" id="th2" maxlength="2" size="1" value="">:<input data-wrapper-class="youwantto" id="tm2" maxlength="2" size="1" value=""> </div>
+			<div class="TimeForFalling"><div>Вы засыпаете за (в минутах):</div> <input data-wrapper-class="youwantto" id="tff2" maxlength="2" size="1" value=""> </div>
+		</div>
+		<div class="knopka" id="knopka2">Рассчитать</div>
+		<div class="AllYS">
+		<div class="YouShould"></div>
+		<div class="YSwhat">
+			<div class="YSstage1"></div>
+			<div class="YSstage2"></div>
+			<div class="YSstage3"></div>
+			<div class="YSstage4"></div>
+			<div class="YSstage5"></div>
+			<div class="YSstage6"></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="Scenario">
+	<div class="Sc3">
+		<div class="ScName">Сценарий 3</div>
+		<div class="ScInfo">Во сколько вам следует проснуться, если вы ляжете прямо сейчас?</div>
+		<div class="ScIfYou"></div>
+		<div class="Values">
+			<div class="TimeForFalling"><div>Вы засыпаете за (в минутах):</div> <input data-wrapper-class="youwantto" id="tff3" maxlength="2" size="1" value=""> </div>
+		</div>
+		<div class="knopka" id="knopka3">Рассчитать</div>
+		<div class="AllYS">
+		<div class="YouShould"></div>
+		<div class="YSwhat">
+			<div class="YSstage1"></div>
+			<div class="YSstage2"></div>
+			<div class="YSstage3"></div>
+			<div class="YSstage4"></div>
+			<div class="YSstage5"></div>
+			<div class="YSstage6"></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+<div data-role="footer" style="text-align:center;">
+<div class="nameofcreator">Торопыгин Максим</div>
+<a class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" href="www.toropyginmaxim.ru">www.toropyginmaxim.ru</a>
+</div>
+</div>
+
+
+<div data-role="page" id="howItWorks">
+<div data-role="navbar">
+      <ul>
+        <li><a class="navi" href="#mainPage" data-icon="home">Калькулятор</a></li>
+        <li><a class="navi" href="#howItWorks" data-icon="info">Как считать</a></li>
+        <li><a class="navi" href="#contacts" data-icon="search">Контакты</a></li>
+      </ul>
+    </div>
+
+<div role="main" class="ui-content">
+<div class="Info">
+<div class="TitleInfo"><h2>Что такое калькулятор сна и как он работает?</h2></div>
+<div class="TextInfo">
+<p>Калькулятор сна – это приложение, которое вычисляет время, в которое вы должны заснуть и проснуться, чтобы встать с кровати бодрым и энергичным человеком. </p>
+<p>Вычисления строятся на теории циклов сна. Цикл длится около 1.5 часа. Чтобы проснуться отдохнувшим и выспавшимся, необходимо встать, когда один из них подходит к концу. Следовательно, спать вы должны или 1.5 часа, или 3 часа, или 4.5 часа и т.д. </p>
+<p>Приложение, которым вам предстоит воспользоваться, имеет 3 сценария. В первом из них вы указываете, когда вы хотите проснуться, и калькулятор сна считает, в какое время вам нужно лечь. Второй сценарий действует наоборот: вы указываете время, когда вы засыпаете. В третьем сценарии вы сможете посчитать, когда вам следует проснуться, если вы решили лечь спать прямо сейчас.</p>
+</div>
+</div>
+
+</div>
+
+
+<div data-role="footer" style="text-align:center;">
+<div class="nameofcreator">Торопыгин Максим</div>
+<a class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" href="www.toropyginmaxim.ru">www.toropyginmaxim.ru</a>
+</div>
+
+</div>
+
+
+<div data-role="page" id="contacts">
+<div data-role="navbar">
+      <ul>
+        <li><a class="navi" href="#mainPage" data-icon="home">Калькулятор</a></li>
+        <li><a class="navi" href="#howItWorks" data-icon="info">Как считать</a></li>
+        <li><a class="navi" href="#contacts" data-icon="search">Контакты</a></li>
+      </ul>
+    </div>
+
+<div role="main" class="ui-content">
+Тут будут контакты!
+
+</div>
+
+
+<div data-role="footer" style="text-align:center;">
+<div class="nameofcreator">Торопыгин Максим</div>
+<a class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" href="www.toropyginmaxim.ru">www.toropyginmaxim.ru</a>
+</div>
+
+</div>
+
+</body>
+</html>
